@@ -17,7 +17,7 @@ pipeline {
    			 }
 		 stage('Scan') {
       			steps {
-        			sh 'grype image --no-progress --exit-code 1 --severity HIGH,CRITICAL $imageName'
+        			sh 'trivy image --no-progress --exit-code 1 --severity HIGH,CRITICAL $imageName'
       				}
     			}  		
 		
