@@ -2,7 +2,7 @@ pipeline {
 
 	environment {
 		registryCredentials = "nexus"
-		imageName = "myapp1"
+		imageName = "alpine"
 		registry = "35.88.173.249:8085/"
 	}
 	agent any
