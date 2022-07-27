@@ -1,9 +1,9 @@
 pipeline {
 
 	environment {
-		registryCredentials = "rinshad-nexus"
+		registryCredentials = "nexus"
 		imageName = "myapp1"
-		registry = "54.166.203.23:8443/"
+		registry = "35.88.173.249:8085/"
 	}
 	agent any
 	stages {
@@ -17,7 +17,7 @@ pipeline {
    			 }
 		 stage('Scan') {
       			steps {
-        			sh 'trivy image --no-progress --exit-code 1 --severity HIGH,CRITICAL $imageName'
+        			sh 'grype image --no-progress --exit-code 1 --severity HIGH,CRITICAL $imageName'
       				}
     			}  		
 		
