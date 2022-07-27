@@ -1,5 +1,5 @@
 {
-  "name": "custom-nodejsapp",
+  "name": "nodejsapp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rinshad1/custom-nodejsapp.git"
+    "url": "git+https://github.com/Botsky123/nodejs.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rinshad1/custom-nodejsapp/issues"
+    "url": "https://github.com/Botsky123/nodejs/issues"
   },
-  "homepage": "https://github.com/rinshad1/custom-nodejsapp#readme",
+  "homepage": "https://github.com/Botsky123/nodejs#readme",
   "dependencies": {
     "express": "^4.18.1"
   }
